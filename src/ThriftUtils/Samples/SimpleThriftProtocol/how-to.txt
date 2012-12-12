@@ -1,0 +1,15 @@
+﻿Steps to work with SimpleThriftProtocol project (if you want to rebuild the project basing on changes in sample.thrift file)
+
+1. Download Thrift compiler from https://dist.apache.org/repos/dist/release/thrift/0.9.0/thrift-0.9.0.exe
+
+2. Add path to thrift-0.9.0.exe to %PATH% and rename into thrift.exe
+
+3. Go to directoty where SimpleThriftProtocol.protocol.csproj is located.
+
+5. Run the following command: 
+	msbuild SimpleThriftProtocol.csproj /t:Generate
+
+6. Add resulting .cs files into the "Classes" folder of SimpleThriftProtocol project (don't just copy - use Visual Studio "Add \ Existing Item" command; 
+   or the edit SimpleThriftProtocol.csproj file if you feel smart enough)
+
+7. Rebuild the SimpleThriftProtocol project and you're done!
